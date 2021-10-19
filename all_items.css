@@ -1,0 +1,10 @@
+.all_items{
+    background-color: rgb(173, 108, 11);
+    margin-top: 97px;
+}
+.all_items .container{
+    max-width: 1200px;
+    margin: auto;
+    height: 100vh;
+    max-height: 786px;
+}

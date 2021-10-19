@@ -1,0 +1,10 @@
+.about_us{
+    background-color: rgb(117, 86, 40);
+    margin-top: 97px;
+}
+.about_us .container{
+    max-width: 1200px;
+    margin: auto;
+    height: 100vh;
+    max-height: 786px;
+}
