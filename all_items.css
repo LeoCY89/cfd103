@@ -1,10 +1,190 @@
 .all_items{
-    background-color: rgb(173, 108, 11);
-    margin-top: 97px;
+    position: relative;
+    padding-bottom: 126px;
+}
+.items_nav{
+    position: sticky;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 76px;
+    z-index: 9;
+    background-color: rgb(214, 192, 121);
 }
 .all_items .container{
     max-width: 1200px;
     margin: auto;
-    height: 100vh;
-    max-height: 786px;
 }
+.all_items .container ul{
+    padding-top: 126px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.all_items .container ul > h3{
+    flex: 0 1 1200px;
+    margin-bottom: 20px;
+    letter-spacing: 21px;
+    font-size: 28px;
+    text-indent: 10px;
+}
+.all_items .container ul li{
+    flex: 0 1 350px;
+    background-color: rgb(233, 208, 168);
+    box-shadow: 0px 0px 5px 1px rgba(61, 30, 12, 0.521);
+    border-radius: 18px;
+    overflow: hidden;
+    margin: 40px 20px 0 20px;
+}
+
+.all_items .container .item a{
+    display: block;
+    text-align: center;
+}
+.all_items .container .item > a{
+    padding-bottom: 6px;
+}
+.all_items .container .item > a:hover .pic img{
+    transform: scale(1.05);
+}
+.all_items .container .item .add_cart:hover{
+    background-color: rgb(93, 129, 38);
+}
+.all_items .container .item .add_cart:hover img{
+    right: calc(50% - 15px);
+    transform: scale(1.05);
+}
+.all_items .container .item .add_cart:hover p{
+    opacity: 0;
+}
+.all_items .container .item h4{
+    font-size: 20px;
+    letter-spacing: 12px;
+    margin-top: 6px;
+}
+.all_items .container .item h4+p{
+    letter-spacing: 3px;
+    margin-top: 3px;
+}
+.all_items .container .item .pic{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.all_items .container .item .pic img{
+    width: 100%;
+    vertical-align: top;
+    transition: transform .5s ease-in-out;
+}
+.all_items .container .item .add_cart{
+    width: 100%;
+    background-color: rgb(112, 138, 71);
+    position: relative;
+}
+.all_items .container .item .add_cart p{
+    line-height: 36px;
+    font-size: 24px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+}
+.all_items .container .item .add_cart img{
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 3px;
+    right: 15px;
+    transition: right .3s ease-in-out, transform .1s .3s ease-in-out;
+}
+@media screen  and (min-width:769px){
+    .items_nav ul{
+        display: flex;
+        justify-content: center;
+    }
+    .items_nav ul li a{
+        display: block;
+        line-height: 50px;
+        color: rgb(67, 104, 7);
+        margin: 0 10px;
+    }
+}
+@media screen  and (max-width:768px){
+    .items_nav ul{
+        position: relative;
+        height: 50px;
+    }
+    .items_nav ul li{
+        width: 100%;
+        line-height: 50px;
+        position: relative;
+        text-align: center;
+        background-color: rgb(224, 202, 173);
+        transition: transform .3s ease-in-out;
+    }
+    .items_nav ul li:nth-child(1){
+        transform: translateY(0px);
+        z-index: 7;
+     }
+    .items_nav ul li:nth-child(2){
+       transform: translateY(-50px);
+       z-index: 6;
+    }
+    .items_nav ul li:nth-child(3){
+       transform: translateY(-100px);
+       z-index: 5;
+    }
+    .items_nav ul li:nth-child(4){
+       transform: translateY(-150px);
+       z-index: 4;
+    }
+    .items_nav ul li:nth-child(5){
+       transform: translateY(-200px);
+       z-index: 3;
+    }
+    .items_nav ul li:nth-child(6){
+       transform: translateY(-250px);
+       z-index: 2;
+    }
+    .items_nav ul li:nth-child(7){
+       transform: translateY(-300px);
+       z-index: 1;
+    }
+    .items_nav ul li a{
+        display: block;
+        color: rgb(67, 104, 7);
+    }
+    .items_nav label[for="more_items"]{
+        width: 50px;
+        height: 50px;
+        /* background-color: #ffa; */
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+    }
+    .items_nav label span{
+        display: block;
+        width: 0;
+        height: 0;
+        border-top: 10px solid rgb(104, 83, 25);
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        margin: 20px auto;
+        transform: rotate(-90deg);
+        transition: transform .3s ease-in-out;
+    }
+    input[type="checkbox"]:checked ~ .items_nav label span{
+        transform: rotate(0deg);
+    }
+    input[type="checkbox"]:checked ~ .items_nav ul li{
+        transform: translateY(0px);
+    }
+    .all_items .container ul{
+        justify-content: center;
+    }
+    .all_items .container ul li{
+        flex: 1 1 350px;
+    }
+}
+

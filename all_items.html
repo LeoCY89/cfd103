@@ -9,20 +9,21 @@
     <link rel="stylesheet" href="all_items.css">
 </head>
 <body>
+    <input type="checkbox" id="toggler">
     <header class="main-header">
         <div class="container">
-            <div class="logo">
-                <a href="front_page.html"><img src="img/logo.png" alt="imalittle87girl"></a>
-            </div>
-            <h1>imalittle87girl|甜心坊</h1>
-            <input type="checkbox" id="toggler">
             <label for="toggler">
-                <div class="hamburger-container">
+                <div class="hamburger">
+                    <span></span>
                     <span></span>
                     <span></span>
                 </div>
             </label>          
-            <nav>
+            <div class="logo">
+                <a href="front_page.html"><img src="img/logo.png" alt="imalittle87girl"></a>
+            </div>
+            <h1>imalittle87girl|甜心坊</h1>
+            <nav class="main-nav">
                 <h2>導覽列表</h2>
                 <ul>
                     <li><a href="news_page.html">最新消息</a></li>
@@ -39,26 +40,340 @@
                 <a href="#"><img src="img/shopping.png" alt="shopping"></a>
             </div>
         </div>
-    </header>       
+    </header> 
     <article>
         <h2>商品總覽頁</h2>
+        <section class="banner">
+            <h2>banner</h2>
+            <div class="container">
+                <div class="pic">
+                    <img src="img/cake_1.jpg" alt="">
+                </div>     
+            </div>
+        </section>
         <section class="all_items">
             <h2>商品總覽</h2>
-            <div class="container"></div>
+            <input type="checkbox" id="more_items">
+            <nav class="items_nav">
+                <h2>商品總覽列表</h2>
+                <ul>
+                    <li><a href="#item_a">季節/節慶限定</a></li>
+                    <li><a href="#item_b">鮮奶油蛋糕</a></li>
+                    <li><a href="#item_c">慕斯蛋糕</a></li>
+                    <li><a href="#item_d">重乳酪蛋糕</a></li>
+                    <li><a href="#item_e">千層蛋糕</a></li>
+                    <li><a href="#item_f">其他小點心</a></li>
+                    <li><a href="#item_g">蠟燭/配件</a></li>
+                </ul>
+                <label for="more_items">
+                    <span></span>
+                </label>
+            </nav>
+            <ul class="container">
+                <ul id="item_a">
+                    <h3>季節/節慶限定</h3>
+                    <li class="item">
+                        <a href="item_order.html">
+                            <div class="pic">
+                                <img src="img/cake_1.jpg" alt="">
+                            </div>
+                           <h4>草莓蛋糕</h4>
+                           <p>NT$500</p>
+                        </a>
+                        <div class="add_cart">
+                            <a href="#">
+                                <p>加入購物車</p>
+                                 <img src="img/shopping.png" alt="">
+                             </a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="item_order.html">
+                            <div class="pic">
+                                <img src="img/cake_1.jpg" alt="">
+                            </div>
+                           <h4>草莓蛋糕</h4>
+                           <p>NT$500</p>
+                        </a>
+                        <div class="add_cart">
+                            <a href="#">
+                                <p>加入購物車</p>
+                                 <img src="img/shopping.png" alt="">
+                             </a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="item_order.html">
+                            <div class="pic">
+                                <img src="img/cake_1.jpg" alt="">
+                            </div>
+                           <h4>草莓蛋糕</h4>
+                           <p>NT$500</p>
+                        </a>
+                        <div class="add_cart">
+                            <a href="#">
+                                <p>加入購物車</p>
+                                 <img src="img/shopping.png" alt="">
+                             </a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="item_order.html">
+                            <div class="pic">
+                                <img src="img/cake_1.jpg" alt="">
+                            </div>
+                           <h4>草莓蛋糕</h4>
+                           <p>NT$500</p>
+                        </a>
+                        <div class="add_cart">
+                            <a href="#">
+                                <p>加入購物車</p>
+                                 <img src="img/shopping.png" alt="">
+                             </a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="item_order.html">
+                            <div class="pic">
+                                <img src="img/cake_1.jpg" alt="">
+                            </div>
+                           <h4>草莓蛋糕</h4>
+                           <p>NT$500</p>
+                        </a>
+                        <div class="add_cart">
+                            <a href="#">
+                                <p>加入購物車</p>
+                                 <img src="img/shopping.png" alt="">
+                             </a>
+                        </div>
+                    </li>
+                </ul>
+                <ul id="item_b">
+                    <h3>鮮奶油蛋糕</h3>
+                    <li class="item">
+                        <a href="item_order.html">
+                            <div class="pic">
+                                <img src="img/cake_1.jpg" alt="">
+                            </div>
+                           <h4>草莓蛋糕</h4>
+                           <p>NT$500</p>
+                        </a>
+                        <div class="add_cart">
+                            <a href="#">
+                                <p>加入購物車</p>
+                                 <img src="img/shopping.png" alt="">
+                             </a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="item_order.html">
+                            <div class="pic">
+                                <img src="img/cake_1.jpg" alt="">
+                            </div>
+                           <h4>草莓蛋糕</h4>
+                           <p>NT$500</p>
+                        </a>
+                        <div class="add_cart">
+                            <a href="#">
+                                <p>加入購物車</p>
+                                 <img src="img/shopping.png" alt="">
+                             </a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="item_order.html">
+                            <div class="pic">
+                                <img src="img/cake_1.jpg" alt="">
+                            </div>
+                           <h4>草莓蛋糕</h4>
+                           <p>NT$500</p>
+                        </a>
+                        <div class="add_cart">
+                            <a href="#">
+                                <p>加入購物車</p>
+                                 <img src="img/shopping.png" alt="">
+                             </a>
+                        </div>
+                    </li>
+                </ul>
+                <ul id="item_c">
+                    <h3>慕斯蛋糕</h3>
+                    <li class="item">
+                        <a href="item_order.html">
+                            <div class="pic">
+                                <img src="img/cake_1.jpg" alt="">
+                            </div>
+                           <h4>草莓蛋糕</h4>
+                           <p>NT$500</p>
+                        </a>
+                        <div class="add_cart">
+                            <a href="#">
+                                <p>加入購物車</p>
+                                 <img src="img/shopping.png" alt="">
+                             </a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="item_order.html">
+                            <div class="pic">
+                                <img src="img/cake_1.jpg" alt="">
+                            </div>
+                           <h4>草莓蛋糕</h4>
+                           <p>NT$500</p>
+                        </a>
+                        <div class="add_cart">
+                            <a href="#">
+                                <p>加入購物車</p>
+                                 <img src="img/shopping.png" alt="">
+                             </a>
+                        </div>
+                    </li>
+                </ul>
+                <ul id="item_d">
+                    <h3>重乳酪蛋糕</h3>
+                    <li class="item">
+                        <a href="item_order.html">
+                            <div class="pic">
+                                <img src="img/cake_1.jpg" alt="">
+                            </div>
+                           <h4>草莓蛋糕</h4>
+                           <p>NT$500</p>
+                        </a>
+                        <div class="add_cart">
+                            <a href="#">
+                                <p>加入購物車</p>
+                                 <img src="img/shopping.png" alt="">
+                             </a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="item_order.html">
+                            <div class="pic">
+                                <img src="img/cake_1.jpg" alt="">
+                            </div>
+                           <h4>草莓蛋糕</h4>
+                           <p>NT$500</p>
+                        </a>
+                        <div class="add_cart">
+                            <a href="#">
+                                <p>加入購物車</p>
+                                 <img src="img/shopping.png" alt="">
+                             </a>
+                        </div>
+                    </li>
+                </ul>
+                <ul id="item_e">
+                    <h3>千層蛋糕</h3>
+                    <li class="item">
+                        <a href="item_order.html">
+                            <div class="pic">
+                                <img src="img/cake_1.jpg" alt="">
+                            </div>
+                           <h4>草莓蛋糕</h4>
+                           <p>NT$500</p>
+                        </a>
+                        <div class="add_cart">
+                            <a href="#">
+                                <p>加入購物車</p>
+                                 <img src="img/shopping.png" alt="">
+                             </a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="item_order.html">
+                            <div class="pic">
+                                <img src="img/cake_1.jpg" alt="">
+                            </div>
+                           <h4>草莓蛋糕</h4>
+                           <p>NT$500</p>
+                        </a>
+                        <div class="add_cart">
+                            <a href="#">
+                                <p>加入購物車</p>
+                                 <img src="img/shopping.png" alt="">
+                             </a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="item_order.html">
+                            <div class="pic">
+                                <img src="img/cake_1.jpg" alt="">
+                            </div>
+                           <h4>草莓蛋糕</h4>
+                           <p>NT$500</p>
+                        </a>
+                        <div class="add_cart">
+                            <a href="#">
+                                <p>加入購物車</p>
+                                 <img src="img/shopping.png" alt="">
+                             </a>
+                        </div>
+                    </li>
+                </ul>
+                <ul id="item_f">
+                    <h3>其他小點心</h3>
+                    <li class="item">
+                        <a href="item_order.html">
+                            <div class="pic">
+                                <img src="img/cake_1.jpg" alt="">
+                            </div>
+                           <h4>草莓蛋糕</h4>
+                           <p>NT$500</p>
+                        </a>
+                        <div class="add_cart">
+                            <a href="#">
+                                <p>加入購物車</p>
+                                 <img src="img/shopping.png" alt="">
+                             </a>
+                        </div>
+                    </li>
+                </ul>
+                <ul id="item_g">
+                    <h3>蠟燭/配件</h3>
+                    <li class="item">
+                        <a href="item_order.html">
+                            <div class="pic">
+                                <img src="img/cake_1.jpg" alt="">
+                            </div>
+                           <h4>草莓蛋糕</h4>
+                           <p>NT$500</p>
+                        </a>
+                        <div class="add_cart">
+                            <a href="#">
+                                <p>加入購物車</p>
+                                 <img src="img/shopping.png" alt="">
+                             </a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="item_order.html">
+                            <div class="pic">
+                                <img src="img/cake_1.jpg" alt="">
+                            </div>
+                           <h4>草莓蛋糕</h4>
+                           <p>NT$500</p>
+                        </a>
+                        <div class="add_cart">
+                            <a href="#">
+                                <p>加入購物車</p>
+                                 <img src="img/shopping.png" alt="">
+                             </a>
+                        </div>
+                    </li>
+                </ul>
+            </ul>
         </section>
         <section class="contact_information">
             <h2>聯絡資訊</h2>
             <div class="container">
-                <div class="contact">
-                    <div class="logo">
-                        <a href="front_page.html"><img src="img/logo.png" alt=""></a>
-                    </div>
-                    <div class="txt">
-                        <p>連絡電話 : 03-1234567</p>
-                        <p>營業時間 : 周一至周五 下午13-00至晚上21-00</p>
-                        <p>門市地址 : 桃園市蘆竹區南崁路</p>
-                        <p>電子信箱 : imalittle87girl@gmail.com</p>
-                    </div>
+                <div class="logo">
+                    <a href="front_page.html"><img src="img/logo.png" alt=""></a>
+                </div>
+                <div class="txt">
+                    <p>連絡電話 : 03-1234567</p>
+                    <p>營業時間 : 周一至周五 下午13-00至晚上21-00</p>
+                    <p>門市地址 : 桃園市蘆竹區南崁路</p>
+                    <p>電子信箱 : imalittle87girl@gmail.com</p>
                 </div>
                 <div class="location">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d852.9382907597158!2d121.29374586373702!3d25.046745912586122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681fd8483f9d1f%3A0x3c564263123381cb!2zMzM45qGD5ZyS5biC6JiG56u55Y2A5Y2X5bSB6Lev!5e0!3m2!1szh-TW!2stw!4v1633688631691!5m2!1szh-TW!2stw" loading="lazy"></iframe>  

@@ -1,10 +1,7 @@
-.order_process{
-    background-color: rgb(224, 193, 146);
-    margin-top: 97px;
-}
 .order_process .container{
     max-width: 1200px;
     margin: auto;
     height: 100vh;
     max-height: 786px;
+    
 }

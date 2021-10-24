@@ -1,0 +1,215 @@
+.item_order{
+    background-color: rgb(184, 161, 103);
+}
+.item_order .container{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+.item_order input[type="radio"]{
+    display: none;
+}
+.item_order .container ul{
+    flex: 0 1 500px;
+    height: 500px;
+    display: flex;
+    position: relative;
+}
+.item_order .container ul > li{
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px 0px rgb(95, 70, 14);
+}
+/* ------------------------------------ */
+.item_order ul li:nth-child(1){
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+}
+.item_order ul li:nth-child(2){
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+}
+.item_order ul li:nth-child(3){
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+}
+
+#item_switch_1:checked ~ ul li:nth-child(1){
+    opacity: 1;
+}
+#item_switch_2:checked ~ ul li:nth-child(2){
+    opacity: 1;
+}
+#item_switch_3:checked ~ ul li:nth-child(3){
+    opacity: 1;
+}
+/* ------------------------------------------ */
+.item_order .pic{
+    flex: 0 1 500px;
+    height: 100%;
+    position: absolute;
+}
+.item_order .pic > img{
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    object-fit: cover;
+}
+.item_order .switch{
+    flex: 0 1 1000px;
+    justify-self: flex-start;
+    display: flex;
+    margin-top: 5px;
+}
+.item_order label{
+    display: block;
+    flex: 0 1 90px;
+    margin-right: 5px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px 0px rgb(95, 70, 14);
+    overflow: hidden;
+}
+.item_order label > img{
+    width: 100%;
+    vertical-align: top;
+    object-fit: cover;
+}
+/* ------------------------------------- */
+.item_order .content{
+    flex: 0 1 500px;
+    padding: 0 20px;
+    font-size: 28px;
+}
+.item_order .content h3{
+    font-size: 28px;
+    letter-spacing: 9px;
+}
+.item_order .content h3::first-letter{
+    font-size: 200%;
+}
+.item_order .content p:nth-child(2){
+    width: 100%;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 3px;
+    margin: 20px 0;
+    color: black;
+}
+.item_order .content p:nth-child(3) span{
+    display: inline-block;
+    margin-left: 12px;
+    letter-spacing: 6px;
+    color: brown;
+}
+.item_order .content p:nth-child(4){
+    display: inline-block;
+    margin-top: 20px;
+}
+.item_order .content #size{
+    display: inline-block;
+    width: 100px;
+    width: 40%;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    margin-left: 9px;
+    color: black;
+}
+.item_order .content #size > option{
+    color: black;
+} 
+.item_order .content .amount{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.item_order .content .amount p{
+    margin-right: 15px;
+}
+.item_order .content .amount input{
+    display: block;
+    width: 50px;
+    line-height: 25px;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    color: black;
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.item_order .content .amount button{
+    width: 25px;
+    height: 25px;
+    font-size: 18px;
+    border: none;
+    color: black;
+    background-color: rgb(160, 138, 97);
+}
+.item_order .content .amount button:hover{
+    background-color: rgb(105, 84, 44);
+}
+.item_order .content .cart_pay button{
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    margin-top: 10px;
+    margin-right: 10px;
+    color: rgb(255, 255, 255);
+}
+.item_order .content .cart_pay button:nth-child(1){
+    background-color: rgb(49, 114, 33);
+}
+.item_order .content .cart_pay button:nth-child(2){
+    background-color: rgb(197, 42, 42);
+}
+.item_order .content .cart_pay button:nth-child(1):hover{
+    background-color: rgb(24, 77, 11);
+}
+.item_order .content .cart_pay button:nth-child(2):hover{
+    background-color: rgb(133, 14, 14);
+}
+
+
+
+
+@media screen  and (max-width:1100px) and (min-width: 769px){
+    .item_order .content{
+        flex: 0 1 595px;
+        padding: 20px 0;
+        order: 1;
+    }
+    .item_order .switch{
+        flex: 0 1 90px;
+        display: block;
+        margin-top: 0;
+        margin-left: 5px;
+    }
+    .item_order .switch label{
+        margin-bottom: 5px;
+        margin-right: 0;
+    }
+}
+@media screen  and (max-width:768px){
+    .item_order .content{
+        order: 1;
+        padding: 20px 0;
+    }
+    .item_order .switch{
+        flex: 0 1 500px;
+        margin-bottom: 5px;
+    }
+    .item_order label{
+        flex: 0 1 90px;
+        margin: 0;
+    }   
+    .item_order label:nth-child(2){
+        margin: 0 5px;
+    } 
+}

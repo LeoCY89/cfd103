@@ -1,10 +1,6 @@
-.news{
-    background-color: rgb(224, 193, 146);
-    margin-top: 97px;
+:root{
+    --color: rgb(201, 174, 100);
 }
-.news .container{
-    max-width: 1200px;
-    margin: auto;
-    height: 100vh;
-    max-height: 786px;
+.news{
+    background-color: var(--color);
 }

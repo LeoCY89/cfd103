@@ -1,244 +1,246 @@
-*{margin: 0; padding: 0;color: rgb(117, 89, 52);box-sizing: border-box;}
-h3{font-size: 20px;}
-p{font-size: 18px;}
-a{font-size: 18px; text-decoration: none;}
-ul,li{list-style: none;}
+@font-face{
+    src: url(fonts/NotoSansTC-Light.otf);
+    font-family:  NotoSansTC;
+}
+*{margin: 0;padding: 0;box-sizing: border-box;font-family: NotoSansTC;color: rgb(243, 242, 239);}
 h1{display: none;}
 h2{display: none;}
-/* body{
-     background-color: rgb(255, 232, 190);
-} */
-/* ------------header------------ */
-.main-header{
-    width: 100%;
-    background-color: rgb(250, 211, 160);
-    position: fixed;
-    top: 0;
-    z-index: 100;
-}
-.main-header .container{
-    max-width: 1200px;
-    margin: auto;
-    padding: 10px 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    position: relative;
-    /* background-color: #faa; */
-}
-.main-header .container .logo{
-    width: 80px;
-    margin: 0 10px;
-}
-.main-header .container .logo img{
-    width: 100%;
-    vertical-align: top;
-}
-.main-header .container #toggler{
+ul,li{list-style: none;}
+a{text-decoration: none}
+input[type="checkbox"]{
     display: none;
 }
-.main-header .container nav{
-    margin: auto;
-    padding: 0 10px;
-    /* background-color: #22f; */
+.main-header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: rgb(223, 187, 132);
 }
-.main-header .container nav ul{
+.main-header .container{
     display: flex;
-    /* background-color: #aff; */
+    align-items: center;
+    position: relative;
 }
-.main-header .container nav ul li{
-    width: 80px;;
-    /* background-color: #ffa; */
-    margin: 0 10px;
- }
-.main-header .container nav ul li a{
-    display: inline-block;
+.main-header .logo{
+    width: 80px;
+}
+.main-header .logo img{
     width: 100%;
-    line-height: 40px;
+    vertical-align: top;
+}
+.main-nav a{
+    display: block;
+    line-height: 42px;
     text-align: center;
-    /* background-color: salmon; */
+    font-size: 20px;
 }
-.main-header .container .account{
-    width: 20px;
+.main-header .account{
+    width: 15px;
+    margin-right: 5px;
+}
+.main-header .account img{
+    display: block;
+    width: 100%;
+}
+.main-header .shopping{
+    width: 15px;
     margin-right: 10px;
 }
-.main-header .container .account img{
+.main-header .shopping img{
+    display: block;
     width: 100%;
+}
+article{
+    margin-top: 77px;
+    background-image: url(img/bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner .pic{
+    width: 100%;
+    height: calc(100vh - 50px);
+    max-height: 768px;
+}
+.banner .pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
     vertical-align: top;
 }
-.main-header .container .shopping{
-    width: 20px;
-    margin-right: 10px;
-}
-.main-header .container .shopping img{
-    width: 100%;
-    vertical-align: top;
-}
-
-@media screen and (max-width: 768px){
-    /* ------------header------------ */
-    .main-header .container{
-        flex-wrap: nowrap;
-    }
-    .main-header .container .logo{
-        width: 80px;
-        margin: auto;
-    }
-    .main-header .container #toggler{
-        display: none;
-    }
-    #toggler:checked + label .hamburger-container span:nth-child(1){
-        transform: rotate(45deg);
-        top: 4px;
-        transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
-    }
-    #toggler:checked + label .hamburger-container span:nth-child(2){
-        transform: rotate(-45deg);
-        top: -4px;
-        transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
-    }
-    .main-header .container label{
-        order: -1;
-    }
-    .hamburger-container{
-        display: block;
-        width: 20px;
-        height: 20px;
-        position: relative;
-        top: 5px;
-        left: 10px;
-    }
-    .hamburger-container span{
-        display: block;
-        height: 1px;
-        background-color: rgb(126, 87, 3);
-        position: relative;
-        transition: transform .3s ease-in-out, top .3s ease-in-out .3s;
-        top: 0;
-    }
-    .hamburger-container span:nth-child(2){
-        margin-top: 7px;
-    }
-    #toggler:checked ~ nav{
-        transform:scaleY(1);
-        opacity: 1;
-    }
-    .main-header .container nav {
-        /* display: none; */
-        background-color: rgba(121, 101, 76, 0.836);
-        width: 100%;
-        height: 100vh;
-        position: absolute;
-        top: 97px;
-        left: 0;
-        transform: scaleY(0);
-        transition: transform .3s ease-in-out .3s, opacity .3s ease-in-out .3s;
-        transform-origin: 50% 0;
-        opacity: 0;
-    }
-    .main-header .container nav{
-        padding: 0;
-    }
-    .main-header .container nav ul{
-        display: block;
-    }
-    .main-header .container nav ul li{
-        width: 100%;
-        margin: 0;
-    }
-    .main-header .container nav ul li a{
-        font-size: 24px;
-        text-align: start;
-        margin-left: 10px;
-        color: #fff;
-        font-weight: 100;
-    }
-    .main-header .container .account{
-        position: relative;
-        margin: 0;
-        right: 20px;
-    }
-    .main-header .container .shopping{
-        position: relative;
-        margin: 0;
-        right: 10px;
-    }
-}
-
-/* -----contact_information----- */
+/* --------contact_information--------- */
 .contact_information{
     width: 100%;
-    background-color: rgb(223, 175, 113);
+    background-color: rgb(199, 162, 106);
 }
 .contact_information .container{
     max-width: 1200px;
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     padding: 10px;
 }
-.contact_information .container .contact{
-    flex: 0 1 550px;
+.contact_information .logo{
+    width: 120px;
     margin: auto;
-    display: flex;
-    align-items: center;
 }
-.contact_information .container .contact .logo{
-    flex: 0 1 180px;
-}
-.contact_information .container .contact .logo img{
+.contact_information .logo img{
     width: 100%;
-}
-.contact_information .container .contact .txt{
-    flex: 0 1 270px;
-    font-size: 16px;
-    padding: 5px;
-    margin: auto;
-} 
-.contact_information .container .location{
-    flex: 0 1 550px;
-    height: 250px;
-    margin: 0 auto;
-}
-.contact_information .container .location iframe{
-    width: 100%;
-    height: 100%;
     vertical-align: top;
+}
+.contact_information .txt{
+    margin: auto;
+    padding: 10px;
+}
+.contact_information .location iframe{
+    width: 100%;
     border: none;
 }
-/* -----footer----- */
+/* ---------------footer--------------- */
 .main_footer{
     width: 100%;
-    background-color: rgb(172, 126, 75);
+    background-color: rgb(133, 101, 64);
 }
 .main_footer .container{
     max-width: 1200px;
-    padding: 10px 0;
-    margin: auto;
     display: flex;
     align-items: center;
+    margin: auto;
+    padding: 10px;
 }
-.main_footer .container p{
-    flex: 1 1 0;
-    text-align: center;
-    margin: 0 50px;
-    font-size: 14px;
+.main_footer p{
+    margin: auto;
+    font-size: 12px;
 }
-.main_footer .container .fb{
-   flex: 0 0 20px;
-   margin-right: 10px;
+.main_footer .fb{
+    width: 15px;
+    margin-right: 5px;
 }
-.main_footer .container .fb img{
+.main_footer .fb img{
+    display: block;
     width: 100%;
-    vertical-align: top;
 }
-.main_footer .container .ig{
-    flex: 0 0 20px;
-    margin-right: 20px;
+.main_footer .ig{
+    width: 15px;
 }
-.main_footer .container .ig img{
+.main_footer .ig img{
+    display: block;
     width: 100%;
-    vertical-align: top;
-}    
-
-
+}
+@media screen and (max-width: 768px){
+    .main-header label .hamburger{
+        width: 35px;
+        height: 35px;
+        margin-left: 10px;
+        overflow: hidden;
+        position: relative;
+    }
+    .main-header label .hamburger span{
+        display: block;
+        width: 25px;
+        height: 1px;
+        background-color: rgb(128, 58, 2);
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: auto;
+        transition: top     .3s .3s ease-in-out,
+                    bottom  .3s .3s ease-in-out, 
+                    left    .2s .3s ease-in-out, 
+                    opacity    .2s .3s ease-in-out, 
+                    transform .3s   ease-in-out;
+    }
+    .main-header label .hamburger span:first-child{
+        transform: rotate(0deg);
+        top: 10px;
+    }
+    .main-header label .hamburger span:nth-child(2){
+        top: 0;
+        bottom: 0;
+        opacity: 1;
+    }
+    .main-header label .hamburger span:last-child{
+        transform: rotate(0deg);
+        bottom: 10px;
+    }
+    #toggler:checked ~ .main-header .hamburger span:first-child{
+        top: 17px;
+        transform: rotate(45deg);
+        transition: top     .3s ease-in-out, 
+                    transform .3s .3s ease-in-out;
+    }
+    #toggler:checked ~ .main-header .hamburger span:last-child{
+        bottom: 17px;
+        transform: rotate(-45deg);
+        transition: bottom  .3s ease-in-out, 
+                    transform .3s .3s ease-in-out;
+    }
+    #toggler:checked ~ .main-header .hamburger span:nth-child(2){
+        left: -60px;
+        opacity: 0;
+        transition: left .2s ease-in-out,
+                    opacity .2s ease-in-out;
+    }
+    .main-nav{
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        height: 100vh;
+        transform: scaleY(0);
+        transform-origin: 50% 0%;
+        transition: transform .5s .5s ease-in-out;
+        background-color: rgba(118, 136, 98, 0.9);
+    }
+    #toggler:checked ~ .main-header .main-nav{
+        transform: scaleY(1);
+        transition: transform .5s ease-in-out;
+    }
+    .main-nav a{
+        width: 100%;
+        margin: auto;
+        opacity: 0;
+        transition: opacity .5s ease-in-out;
+    }
+    #toggler:checked ~ .main-header .main-nav a{
+        opacity: 1;
+        transition: opacity .5s .5s ease-in-out;
+    }
+    .main-header .logo{
+        margin: auto;
+    }
+    .contact_information .container{
+        flex-wrap: wrap;
+    }
+    .contact_information .location{
+        flex: 1 1 300px;
+    }
+     /* --------contact_information--------- */
+}
+@media screen and (min-width: 769px){
+    .main-header .container{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .main-header .logo{
+        margin-left: 10px;
+    }
+    .main-header label{
+        display: none;
+    }    
+    .main-nav{
+        padding: 0 10px;
+        margin: auto;
+    }
+    .main-header .main-nav ul{
+        display: flex;
+    }
+    .main-nav a{
+        margin: 0 10px;
+    }
+    /* --------contact_information--------- */
+    .contact_information .location{
+        flex: 0 1 300px;
+        margin: auto;
+    }
+}
