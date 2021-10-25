@@ -1,5 +1,5 @@
 .item_order{
-    background-color: rgb(184, 161, 103);
+    background-color: rgb(216, 193, 135);
 }
 .item_order .container{
     max-width: 1200px;
@@ -153,7 +153,7 @@ input[type=number]::-webkit-inner-spin-button {
     height: 18px;
     vertical-align: top;
 }
-.item_order .content .amount button:hover{
+.item_order .content .amount button:active{
     background-color: rgb(105, 84, 44);
 }
 .item_order .content .cart_pay button{
@@ -172,10 +172,10 @@ input[type=number]::-webkit-inner-spin-button {
 .item_order .content .cart_pay button:nth-child(2){
     background-color: rgb(197, 42, 42);
 }
-.item_order .content .cart_pay button:nth-child(1):hover{
+.item_order .content .cart_pay button:nth-child(1):active{
     background-color: rgb(24, 77, 11);
 }
-.item_order .content .cart_pay button:nth-child(2):hover{
+.item_order .content .cart_pay button:nth-child(2):active{
     background-color: rgb(133, 14, 14);
 }
 
