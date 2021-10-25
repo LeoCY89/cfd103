@@ -145,10 +145,13 @@ input[type=number]::-webkit-inner-spin-button {
 .item_order .content .amount button{
     width: 25px;
     height: 25px;
-    font-size: 18px;
     border: none;
-    color: black;
     background-color: rgb(160, 138, 97);
+}
+.item_order .content .amount button img{
+    width: 18px;
+    height: 18px;
+    vertical-align: top;
 }
 .item_order .content .amount button:hover{
     background-color: rgb(105, 84, 44);
