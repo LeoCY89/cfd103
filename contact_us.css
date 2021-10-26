@@ -90,7 +90,7 @@
     border-radius: 30px;
     overflow: hidden;
     background-color: rgb(201, 182, 119);
-    box-shadow: 1px 1px 5px 1px rgba(94, 69, 23, 0.89);
+    box-shadow: 1px 1px 5px 0px rgba(63, 44, 7, 0.89);
 }
 .contact_us .txt p{
     margin-bottom: 20px;

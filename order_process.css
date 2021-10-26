@@ -33,7 +33,7 @@
 }
 
 .order_process li{
-    width: 400px;
+    max-width: 400px;
     background-color: rgb(86, 129, 116);
     font-size: 20px;
     text-align: center;
@@ -47,52 +47,46 @@
     margin-top: 0;
 }
 .order_process li:first-child:after{
-    content: "01";
+    content: "1";
     font-size: 100px;
     position: absolute;
     top: 0;
-    left: -20px;
-    color: rgb(218, 176, 99);
+    left: 0px;
 }
 .order_process li:nth-child(2):after{
-    content: "02";
+    content: "2";
     font-size: 100px;
     position: absolute;
     top: 0;
-    left: -20px;
-    color: rgb(206, 174, 114);
+    left: 0px;
 }
 .order_process li:nth-child(3):after{
-    content: "03";
+    content: "3";
     font-size: 100px;
     position: absolute;
     top: 0;
-    left: -20px;
-    color: rgb(177, 156, 117);
+    left: 0px;
 }
 .order_process li:nth-child(4):after{
-    content: "04";
+    content: "4";
     font-size: 100px;
     position: absolute;
     top: 0;
-    left: -20px;
-    color: rgb(189, 174, 146);
+    left: 0px;
 }
 .order_process li:nth-child(5):after{
-    content: "05";
+    content: "5";
     font-size: 100px;
     position: absolute;
     top: 0;
-    left: -20px;
-    color: rgb(150, 118, 58);
+    left: 0px;
 }
 .order_process li:nth-child(6):after{
-    content: "06";
+    content: "6";
     font-size: 100px;
     position: absolute;
     top: 0;
-    left: -20px;
-    color: rgb(223, 172, 78);
+    left: 0px;
 }
 .order_process li:after{
     transform: rotate(-12deg);

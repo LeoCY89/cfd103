@@ -9,6 +9,9 @@ ul,li{list-style: none;}
 a{text-decoration: none}
 input{outline: none;border: none;}
 select{outline: none;border: none;}
+html{
+    scroll-behavior: smooth;
+}
 input[type="checkbox"]{
     display: none;
 }
