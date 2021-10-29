@@ -68,6 +68,7 @@ article{
     width: 100%;
     height: calc(100vh - 76px);
     max-height: 768px;
+    /* padding: 3%; */
 }
 .banner .pic img{
     width: 100%;
@@ -249,5 +250,23 @@ article{
     .contact_information .location{
         flex: 0 1 300px;
         margin: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(359deg)
     }
 }
