@@ -245,12 +245,32 @@ article{
     }
     .main-nav a{
         margin: 0 10px;
+        position: relative;
+    }
+    .main-nav a::after{
+        content: "";
+        border-top: 66px solid var(--color);
+        border-left: 42px solid var(--color);
+        border-right: 42px solid var(--color);
+        border-bottom: 12px solid transparent;
+        position: absolute;
+        left: -2px;
+        top: -96px;
+        z-index: -1;
+        transition: top .2s ease-in-out;
+    }
+    .main-nav a:hover::after{
+        top: -18px;
     }
     /* --------contact_information--------- */
     .contact_information .location{
         flex: 0 1 300px;
         margin: auto;
     }
+}
+
+:root{
+    --color: rgba(131, 155, 117, 0.527);
 }
 
 
