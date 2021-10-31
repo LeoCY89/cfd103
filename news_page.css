@@ -14,33 +14,32 @@
     right: 0;
     bottom: 0;
     margin: auto;
-    font-size: 30px;
+    font-size: 2rem;
 }
 .banner .container .txt p:nth-child(1){
     letter-spacing: 10px;
     font-size: 200%;
 }
 .banner .container .txt p:nth-child(2){
-    font-size: 18px;
+    font-size: 1rem;
     width: 140px;
     margin-top: 5px;
     margin-right: auto;
     /* background-color: #aff; */
 }
 .banner .container .txt p:nth-child(3){
-    font-size: 18px;
+    font-size: 1rem;
     width: 218px;
-    /* margin-top: 5px; */
+    margin-top: 5px;
     /* background-color: #aff; */
     margin-left: auto;
 }
 .banner .container:before{
     content: "";
-    max-width: 300px;
-    max-height: 300px;
+    width: 300px;
+    height: 300px;
     background-color: rgba(214, 172, 109, 0.658);
-    /* background-color: var(--color); */
-    border-radius: 60% 40% 53% 47% / 44% 44% 56% 56%;
+    border-radius: 56% 44% 53% 47% / 44% 53% 47% 56%;
     position: absolute;
     top: 0;
     left: 0;
@@ -57,7 +56,7 @@
     content: "";
     width: 100%;
     height: 100%;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 40% 100%);
+    clip-path: polygon(0 0, 100% 32%, 100% 56%, 0 56%);
     position: absolute;
     z-index: -2;
     bottom: 0;
@@ -68,7 +67,7 @@
     content: "";
     width: 100%;
     height: 100%;
-    clip-path: polygon(38% 0, 84% 39%, 100% 100%, 0 53%);
+    clip-path: polygon(0 53%, 100% 0, 100% 94%, 0 83%);
     position: absolute;
     z-index: -1;
     bottom: 0;
@@ -96,13 +95,28 @@
     object-position: 50% 40%;
 }
 .news_page ul li:nth-child(1) .txt{
-    flex: 1 0 380px;
+   width: 100%;
+    height: 100%;
+    padding: 5px;
+    position: absolute;
+    background-color: rgba(99, 74, 36, 0.637);
 }
 .news_page ul li:nth-child(1) .txt > h3{
-    letter-spacing: 18px;
+    letter-spacing: 25px;
+    text-indent: 14px;
+    margin-top: 30px;
+    font-size: 32px;
+    margin-bottom: 5px;
+    /* background-color: rgb(12, 59, 59); */
+}
+.news_page ul li:nth-child(1) .txt  p{
+    font-size: 20px;
+    letter-spacing: 10px;
+    /* background-color: rgb(12, 59, 59); */
 }
 .news_page ul li:nth-child(1) .txt p:nth-child(3){
-    font-size: 200%;
+    font-size: 300%;
+    color:rgb(162, 241, 135);
 }
 .news_page ul li{
     flex: 0 1 360px;
@@ -110,14 +124,95 @@
     position: relative;
     border-radius: 20px;
     overflow: hidden;
+    cursor: pointer;
 }
-/* .news_page ul li::after{
+.news_page ul li .date::after{
+    content: "";
+    border-top: 66px solid rgb(143, 165, 106);
+    border-left: 36px solid rgb(143, 165, 106);
+    border-right: 36px solid rgb(143, 165, 106);
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+/* .news_page ul li .date::before{
+    content: "";
+    border-top: 67px solid rgba(19, 29, 2, 0.452);
+    border-left: 36px solid rgba(19, 29, 2, 0.37);
+    border-right: 36px solid rgba(19, 29, 2, 0.459);
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    filter: blur(1px);
+    top: 0;
+    left: 2px;
+    z-index: -1;
+} */
+.news_page ul li .date{
+    position: absolute;
+    font-size: 16px;
+    top: 0;
+    left: 18px;
+    z-index: 0;
+}
+
+.news_page ul li .date p{
+    width: 72px;
+    text-align: center;
+    margin: auto;
+    letter-spacing: 2px;
+    /* background-color: rgb(12, 95, 95); */
+    text-shadow: rgb(80, 62, 80) 1px 1px 1px;
+}
+.news_page ul li .date span{
+    /* background-color: rgb(15, 97, 15); */
+    display: block;
+    width: 10px;
+    line-height: 10px;
+    font-size: 18px;
+    margin: auto;
+    margin-top: 5px;
+    transform: rotate(-90deg);
+    text-shadow: rgb(80, 62, 80) -1px 1px 1px;
+}
+.news_page ul :not(li:first-child) h3{
+    font-size: 20px;
+}
+.news_page ul li:first-child{
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 0;
+    cursor: default;
+}
+.news_page ul li::after{
     content: "";
     width: 100%;
-    height: 20px;
-    background-color: rgb(126, 13, 126);
+    height: 100%;
+    background-color: rgba(116, 95, 51, 0.767);
     position: absolute;
-} */
+    top: -100%;
+    transition: top .1s .1s ease-in-out;
+}
+.news_page ul li::before{
+    content: "詳細內容...";
+    width: 100%;
+    padding-top: 50%;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity .1s ease-in-out;
+}
+.news_page ul :not(li:first-child):hover:after{
+    top: 0;
+    transition: top .1s ease-in-out;
+}
+.news_page ul :not(li:first-child):hover:before{
+    opacity: 1;
+    transition: opacity .1s .1s ease-in-out;
+}
 .news_page .pic{
     flex: 0 1 360px;
 }
@@ -131,12 +226,77 @@
    text-align: center;
    font-size: 30px;
    letter-spacing: 9px;
-   background-color: rgb(172, 126, 59);
+   background-color: rgb(165, 132, 82);
 }
-
-
+.news_page .pages{
+    width: 72px;
+    height: 72px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 16px;
+}
+.news_page .pages a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 60% 40% 53% 47% / 44% 44% 56% 56%;
+    background-color: rgba(155, 155, 108, 0.349);
+}
+.news_page .pages p{
+    position: relative;
+    top: 20px;
+}
+.news_page .pages .pic{
+    width: 12px;
+    margin: auto;
+    position: relative;
+    top: 24px;
+    opacity: 1;
+}
+.news_page .pages .pic img{
+    width: 100%;
+    vertical-align: top;
+}
+.news_page .pages a:hover{
+    background-color: rgba(155, 155, 108, 0.788);
+}    
+.news_page .pages a:hover .pic{
+    animation: pages 1s linear infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes pages{
+    0%{
+        top: 24px;
+        opacity: 1; 
+    }
+    100%{
+        top: 33px;
+        opacity: 0;
+    }
+}
 @media screen  and (min-width:769px){
     .main-nav li:nth-child(1) a::after{
         top: -18px;
+    }
+}
+
+@media screen  and (max-width:800px){
+    .news_page .container{
+        justify-content: center;
+    }
+}
+@media screen  and (max-width:400px){
+    :root{
+        font-size: 10px;
+    }
+    .banner .container .txt{
+        max-height: 100px;
+    }
+    .banner .container .txt p:nth-child(2){
+        width: 180px;
+    }
+    .banner .container:before{
+        width: 200px;
+        height: 200px;
     }
 }
