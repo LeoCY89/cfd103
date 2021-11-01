@@ -44,16 +44,17 @@
     letter-spacing: 6px;
     font-size: 200%;
     font-weight: 500;
+    /* color: rgb(77, 117, 77); */
 }
 .banner .container .txt p:nth-child(2){
-    font-size: 1rem;
+    font-size: 1.2rem;
     width: 180px;
     margin-top: 5px;
     margin-right: auto;
     /* background-color: #aff; */
 }
 .banner .container .txt p:nth-child(3){
-    font-size: 1rem;
+    font-size: 1.2rem;
     width: 220px;
     /* margin-top: 5px; */
     /* background-color: #aff; */
@@ -88,7 +89,7 @@
      z-index: -2;
      bottom: 0;
      left: 0;
-     background-color: rgba(160, 130, 92, 0.39);   
+     background-color: rgba(163, 144, 118, 0.39);   
  }
  .about_us:before{
      content: "";
@@ -99,7 +100,7 @@
      z-index: -1;
      bottom: 0;
      left: 0;
-     background-color: rgba(219, 162, 88, 0.699);   
+     background-color: rgba(236, 205, 163, 0.699);   
  }
 .about_us .container{
     max-width: 1200px;
@@ -107,7 +108,7 @@
     display: flex;
 }
 .about_us .box{
-    flex: 0 1 500px;
+    flex: 0 1 300px;
     margin-left: auto;
     /* background-color: #faf; */
 }
@@ -127,19 +128,38 @@
     width: 100%;
     position: sticky;
     top: 100px;
-    text-align: center;
     writing-mode: vertical-lr;
     /* background-color: #faf; */
     height: 300px;
 }
+.about_us .title p{
+    line-height: 50px;
+}
+.about_us .title p:nth-child(1){
+    font-weight: 900;
+    color: rgb(77, 117, 77);
+}
+.about_us .title p:nth-child(2){
+    position: relative;
+    text-align: center;
+    top: 10px;
+}
+.about_us .title p:nth-child(3){
+    position: relative;
+    text-align: center;
+    top: 30px;
+}
 .about_us .material{
     flex: 0 1 600px;
+    margin-right: auto;
 }
 .about_us .material li{
     position: relative;
 }
 .about_us .material li p{
     font-size: 20px;
+    line-height: 50px;
+    padding: 0 10px;
     color: rgb(241, 239, 228);
     background-color: rgb(94, 116, 87);
     position: absolute;
@@ -184,6 +204,7 @@
         height: 190px;
     }
 }
+/* --------------------------- */
 .all_items{
     margin: 50px 0;
 }
@@ -194,12 +215,17 @@
 }
 .all_items .container >p{
     font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 12px;
+    text-indent: 12px;
+    margin-bottom: 20px;
     text-align: center;
+    color: rgb(77, 117, 77);
 }
 .all_items .viewpanel{
     position:relative;
     max-width: 1160px;
-    height:350px;
+    height:400px;
     margin: auto;
     /* background-color: #bfbfef; */
     overflow:hidden;
@@ -212,28 +238,54 @@
 }
 .all_items .viewpanel .wrap .item{
     flex: 0 0 250px;
-    margin: 10px 20px;
+    margin: 20px 20px;
     font-size: 18px;
     text-align: center;
     border-radius: 20px;
     overflow: hidden;
-    background-color: rgb(199, 176, 112);
+    background-color: rgb(211, 184, 127);
+    box-shadow: 1px 1px 5px 0px rgba(65, 44, 6, 0.452);
+}
+.all_items .container .item > a:hover .pic img{
+    transform: scale(1.05);
 }
 .all_items .viewpanel .wrap .item .pic{
     width: 100%;
 }
+.all_items .viewpanel .wrap .item h3{
+    color: rgb(77, 117, 77);
+    letter-spacing: 6px;
+    text-indent: 6px;
+}
+.all_items .viewpanel .wrap .item h3+p{
+    margin-bottom: 6px;
+}
 .all_items .viewpanel .wrap .item .pic img{
     width: 100%;
     vertical-align: top;
+    transition: transform .5s ease-in-out;
 }
 .all_items .viewpanel .wrap .item .add_cart{
     width: 100%;
     position: relative;
-    background-color: rgb(108, 148, 112);
+    background-color: rgb(123, 145, 86);
+}
+.all_items .viewpanel .wrap .item .add_cart:hover{
+    background-color: rgb(93, 129, 38);
 }
 .all_items .viewpanel .wrap .item .add_cart a{
     display: block;
     font-size: 18px;
+}
+.all_items .viewpanel .wrap .item .add_cart a >p{
+    font-size: 20px;
+    line-height: 40px;
+    opacity: 1;
+    transition: opacity .3s .3s ease-in-out;
+}
+.all_items .viewpanel .wrap .item .add_cart:hover a >p{
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
 }
 .all_items .viewpanel .wrap .item .add_cart img{
     width: 18px;
@@ -244,6 +296,12 @@
     bottom: 0;
     margin: auto;
     right: 5%;
+    transition: right .3s .2s ease-in-out,transform .2s ease-in-out;
+}
+.all_items .viewpanel .item .add_cart:hover img{
+    right: calc(50% - 9px);
+    transform: scale(1.5);
+    transition: right .3s ease-in-out,transform .2s .2s ease-in-out;
 }
 #leftRightPanel{
     width: 100%;

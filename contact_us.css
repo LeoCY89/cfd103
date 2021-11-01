@@ -136,17 +136,19 @@
     font-size: 30px;
     letter-spacing: 15px;
     margin-bottom: 20px;
-    font-weight: 500;
+    font-weight: 900;
     position: relative;
 }
-.contact_us .card p:nth-child(1):after{
+.contact_us .card p:nth-child(1):before{
     content: "";
     width: 100%;
-    height: 1px;
-    background: linear-gradient(to right, rgb(124, 66, 0),rgb(177, 139, 84) );
+    height: 2px;
+    background: linear-gradient(to right, rgb(88, 131, 63) ,rgba(255, 255, 255, 0));
     position: absolute;
-    left: 0;
-    bottom: 0;
+    left: -5px;
+    bottom: 0px;
+    z-index: -1;
+    border-radius: 20px;
 }
 .contact_us .card :not(p:nth-child(1)){
     font-size: 18px;
@@ -173,6 +175,7 @@
     display: block;
     font-size: 20px;
     margin-bottom: 6px;
+    color: rgb(39, 49, 39);
 }
 .contact_us .txt input{
     width: 51%;

@@ -193,17 +193,22 @@
     letter-spacing: 3px;
     height: 80%;
     margin-left: auto;
+    font-size: 18px;
 }
 .about_us .process .dic .txt_bottom{
     letter-spacing: 3px;
     margin-top: auto;
     height: 20%;
+    font-size: 18px;
+}
+.about_us .process .dic p{
+    color: rgb(77, 117, 77);
 }
 .about_us .process .dic:after{
     content: "";
     width: 141.4213562%;
     height: 1px;
-    background-color: rgb(255, 235, 206);
+    background-color: rgb(77, 117, 77);
     position: absolute;
     /* bottom: 0; */
     top: 0;

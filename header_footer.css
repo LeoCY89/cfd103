@@ -2,7 +2,7 @@
     src: url(fonts/NotoSansTC-Light.otf);
     font-family:  NotoSansTC;
 }
-*{margin: 0;padding: 0;box-sizing: border-box;font-family: NotoSansTC;color: rgb(243, 242, 239);}
+*{margin: 0;padding: 0;box-sizing: border-box;font-family: NotoSansTC;color: rgb(255, 255, 255);}
 h1{display: none;}
 h2{display: none;}
 ul,li{list-style: none;}
